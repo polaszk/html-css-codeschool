@@ -23,4 +23,33 @@ h3 {
   font-size: 2.5em;
 }
 
-/* 2.1 */
+/* 2.1 Set Width Of Sidebar */
+.sidebar {
+  width: 41.666666%; /* 400px 400/960*100 (target/context) */
+}
+
+/* 2.2 Set Width Of Content */
+.content {
+  width: 59.8958333%;
+}
+
+/* 2.3 Determine The Context #1 */
+header h1 {}
+
+/* 2.4 Determine The Context #2 */
+.container .content {}
+
+/* 2.5 Convert To Percentage */
+.content {
+  width: 57.291666%;
+}
+
+/* 2.6 Set Margin Of Content */
+.content {
+  margin-right: 39.583333%; /* 380/960*100 */
+}
+
+/* 2.7 Set Padding Of Content */
+.content {
+  padding: 5.5357143%; /* 31/560*100 */
+}
