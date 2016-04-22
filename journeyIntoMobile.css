@@ -53,3 +53,42 @@ header h1 {}
 .content {
   padding: 5.5357143%; /* 31/560*100 */
 }
+
+/* 3.1 IPhone Media Query */
+@media screen and (max-width: 320px) {}
+
+/* 3.2 Media Query 2 */
+@media screen and (max-width: 320px) {
+  .logo {
+    float: none;
+    width: inherit;
+  }
+  nav {
+    float: none;
+    text-align: center;
+    width: inherit;
+  }
+}
+
+/* 3.3 Media Specific Content */
+@media screen and (max-width: 320px) {
+  .content {
+    float: none;
+    width: inherit;
+  }
+  .sidebar {
+    float: none;
+    width: inherit;
+  }
+}
+
+/* 3.4 Media Specific Navigation */
+@media screen and (max-width: 320px) {
+  nav ul li {
+    font-size: 0.8125em;
+    margin-right: 5%;
+    text-transform: uppercase;
+  }
+}
+
+/* 4.1 */
