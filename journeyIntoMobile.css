@@ -91,4 +91,10 @@ header h1 {}
   }
 }
 
-/* 4.1 */
+/* 4.1 Find The Breakpoint */
+@media screen and (max-width: 850px) {}
+
+/* 4.2 Media Specific Header */
+
+/* 4.2 Media Specific Header */
+/* 4.2 Media Specific Header */
