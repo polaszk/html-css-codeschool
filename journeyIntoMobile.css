@@ -140,3 +140,52 @@ header h1 {}
     height: 250px;
   }
 }
+
+/* 5.1 Max-width */
+img {
+  max-width: 100%;
+}
+
+/* 5.2 Max-width On Assets */
+img, 
+embed, 
+object,
+video {
+  max-width: 100%;
+}
+
+/* 5.2 Media Query 1 */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {}
+
+/* 5.3 Media Query 2 */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .logo {
+    background-image: url(logo@2x.png);
+    -webkit-background-size: 75px 75px;
+    background-size: 75px 75px;
+  }
+}
+
+/* 5.4 Picture Element */
+<picture alt="Our Camp Site">
+  <source src="camp-site.jpeg" />
+</picture>
+
+/* 5.6 Media Specific Images */
+<picture alt="Our Camp Site">
+  <source src="camp-site.jpeg" />
+  <source src="camp-site-lrg.jpeg" media="(min-width: 900px)" />
+</picture>
+
+/* 5.7 Noscript Fallback */
+<picture alt="Our Camp Site">
+  <source src="camp-site.jpeg" />
+  <source src="camp-site-lrg.jpeg" media="(min-width: 900px)" />
+  <noscript>
+    <img src="camp-site.jpeg" alt="Our Camp Site" />
+  </noscript>
+</picture>
